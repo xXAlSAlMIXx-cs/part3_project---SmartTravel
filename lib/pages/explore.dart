@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:part2_project/pages/countryActivities.dart';
 
+<<<<<<< HEAD
+=======
+import 'GridPage.dart';
+import 'ListPage.dart';
+
+>>>>>>> 9020866 (Initial upload of Flutter project)
 class Explore extends StatefulWidget {
   const Explore({super.key});
 
@@ -34,6 +40,28 @@ class _ExploreState extends State<Explore> {
                 CountryCard(countryName: 'Iran', imagePath: 'images/IR.jpg'),
               ],
             ),
+<<<<<<< HEAD
+=======
+            SizedBox(height: 30.0,),
+            Text('Guiding to your travel:'),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ListPage()),
+              ),
+              child: Text("View activities list"),
+            ),
+            SizedBox(height: 10.0,),
+            Text('adjust your plan:'),
+            ElevatedButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GridPage()),
+              ),
+              child: Text("View grid list"),
+            ),
+
+>>>>>>> 9020866 (Initial upload of Flutter project)
           ],
         ),
       ),

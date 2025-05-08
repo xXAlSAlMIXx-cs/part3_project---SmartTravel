@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:part2_project/models/user_model.dart';
+<<<<<<< HEAD
 import 'package:part2_project/pages/loginPage.dart';
+=======
+>>>>>>> 9020866 (Initial upload of Flutter project)
 import 'package:part2_project/main.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
