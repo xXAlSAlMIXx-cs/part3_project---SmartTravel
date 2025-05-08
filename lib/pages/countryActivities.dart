@@ -21,7 +21,11 @@ class _CountryActivitiesState extends State<CountryActivities> {
   DateTime? selectedDate;
 
   List<String> selectedActivities = [];
+<<<<<<< HEAD
   final List<String> activities = ['Aquarium', 'Mall Shopping', 'Teleferik'];
+=======
+  final List<String> activities = ['Aquarium', 'Mall shopping', 'Teleferik','Cultural festival'];
+>>>>>>> 9020866 (Initial upload of Flutter project)
 
   String? selectedGender;
   final List<String> genders = ['Male', 'Female'];
@@ -207,7 +211,11 @@ class _CountryActivitiesState extends State<CountryActivities> {
                   ElevatedButton.icon(
                     onPressed: _pickFile,
                     icon: Icon(Icons.upload_file),
+<<<<<<< HEAD
                     label: Text('Upload Image or a Doc.'),
+=======
+                    label: Text('Upload image or a document'),
+>>>>>>> 9020866 (Initial upload of Flutter project)
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.greenAccent,
                       foregroundColor: Colors.black,

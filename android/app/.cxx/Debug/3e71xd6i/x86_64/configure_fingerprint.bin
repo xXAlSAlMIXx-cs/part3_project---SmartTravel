@@ -2,6 +2,7 @@ C/C++ Structured Logd
 b
 `C:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\additional_project_files.txtC
 A
+<<<<<<< HEAD
 ?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	ô¾þ¶ê2 Ã‰¥³ê2a
 _
 ]C:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\android_gradle_build.json	ô¾þ¶ê2ª Ç‰¥³ê2f
@@ -26,3 +27,29 @@ VC:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\prefab_conf
 [C:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\symbol_folder_index.txt	ô¾þ¶ê2R Í‰¥³ê2W
 U
 SC:\flutter\src\flutter\packages\flutter_tools\gradle\src\main\groovy\CMakeLists.txt	ô¾þ¶ê2§ ¯ãÊŸê2
+=======
+?com.android.build.gradle.internal.cxx.io.EncodedFileFingerPrint	þïÿê2 Ã‰¥³ê2a
+_
+]C:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\android_gradle_build.json	þïÿê2ª Ç‰¥³ê2f
+d
+bC:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\android_gradle_build_mini.json	þïÿê2… Ë‰¥³ê2S
+Q
+OC:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\build.ninja	ÿïÿê2‹Ô ™‰¥³ê2W
+U
+SC:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\build.ninja.txt	ÿïÿê2\
+Z
+XC:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\build_file_index.txt	ÿïÿê2S Î‰¥³ê2]
+[
+YC:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\compile_commands.json	ÿïÿê2a
+_
+]C:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\compile_commands.json.bin	ÿïÿê2	g
+e
+cC:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\metadata_generation_command.txt	€ïÿê2
+° Í‰¥³ê2Z
+X
+VC:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\prefab_config.json	€ïÿê2( Í‰¥³ê2_
+]
+[C:\Users\omany\part2_project\android\app\.cxx\Debug\3e71xd6i\x86_64\symbol_folder_index.txt	€ïÿê2R Í‰¥³ê2W
+U
+SC:\flutter\src\flutter\packages\flutter_tools\gradle\src\main\groovy\CMakeLists.txt	€ïÿê2§ ¯ãÊŸê2
+>>>>>>> 9020866 (Initial upload of Flutter project)

@@ -1,5 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+import 'package:part2_project/pages/ListPage.dart';
+>>>>>>> 9020866 (Initial upload of Flutter project)
 import 'package:part2_project/pages/LoginPage.dart';
 import 'package:part2_project/pages/explore.dart';
 import 'package:part2_project/pages/countryActivities.dart';
@@ -19,7 +23,11 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   late TabController _tabController;
   int _selectedIndex = 0;
   UserModel? _currentUser;
+<<<<<<< HEAD
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>(); // Add scaffold key
+=======
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+>>>>>>> 9020866 (Initial upload of Flutter project)
 
   @override
   void initState() {
@@ -64,7 +72,11 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       key: _scaffoldKey, // Set the scaffold key
+=======
+      key: _scaffoldKey,
+>>>>>>> 9020866 (Initial upload of Flutter project)
       backgroundColor: const Color(0xFFF7F7F7),
       appBar: AppBar(
         backgroundColor: Colors.deepOrange,
@@ -74,7 +86,11 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         leading: IconButton(
           icon: Icon(Icons.list_rounded),
           onPressed: () {
+<<<<<<< HEAD
             _scaffoldKey.currentState?.openDrawer(); // Open drawer on tap
+=======
+            _scaffoldKey.currentState?.openDrawer();
+>>>>>>> 9020866 (Initial upload of Flutter project)
           },
         ),
         actions: <Widget>[
@@ -122,20 +138,38 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
+<<<<<<< HEAD
               decoration: BoxDecoration(
                 color: Colors.deepOrange,
               ),
+=======
+              decoration: BoxDecoration(color: Colors.deepOrange),
+>>>>>>> 9020866 (Initial upload of Flutter project)
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CircleAvatar(
                     radius: 30,
                     backgroundColor: Colors.white,
+<<<<<<< HEAD
                     child: Icon(Icons.person, size: 40, color: Colors.deepOrange),
                   ),
                   SizedBox(height: 10),
                   Text('Welcome',style: TextStyle(color: Colors.white, fontSize: 18)),
                   Text(_currentUser != null ? _currentUser!.username : "Guest",
+=======
+                    backgroundImage: _currentUser?.profileImageBytes != null
+                        ? MemoryImage(_currentUser!.profileImageBytes!)
+                        : null,
+                    child: _currentUser?.profileImageBytes == null
+                        ? Icon(Icons.person, size: 40, color: Colors.deepOrange)
+                        : null,
+                  ),
+                  SizedBox(height: 10),
+                  Text('Welcome', style: TextStyle(color: Colors.white, fontSize: 18)),
+                  Text(
+                    _currentUser != null ? _currentUser!.username : "Guest",
+>>>>>>> 9020866 (Initial upload of Flutter project)
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
                 ],
@@ -202,6 +236,69 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                   style: TextStyle(fontSize: 16, color: Colors.grey),
                 ),
                 const SizedBox(height: 20),
+<<<<<<< HEAD
+=======
+
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ListPage()),
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                        height: 200,
+                        width: double.infinity,
+                        margin: const EdgeInsets.only(bottom: 20),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: const DecorationImage(
+                            image: AssetImage('images/exploring.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 30,
+                        left: 20,
+                        child: Container(
+                          padding: const EdgeInsets.all(8),
+                          color: Colors.black.withOpacity(0.5),
+                          child: const Text(
+                            "Top activities",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 20,
+                        left: 20,
+                        child: Row(
+                          children: [
+                            Icon(Icons.explore, color: Colors.white, size: 28),
+                            SizedBox(width: 8),
+                            Text(
+                              "Explore now",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+>>>>>>> 9020866 (Initial upload of Flutter project)
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
@@ -224,6 +321,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                   ),
                 ),
                 const SizedBox(height: 30),
+<<<<<<< HEAD
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Container(
@@ -261,6 +359,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                   ),
                 ),
                 const SizedBox(height: 30),
+=======
+>>>>>>> 9020866 (Initial upload of Flutter project)
                 const Text(
                   "Categories",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
@@ -274,9 +374,15 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                       scrollDirection: Axis.horizontal,
                       children: [
                         buildRoundedImageCard("images/Booking.jpg", "Booking"),
+<<<<<<< HEAD
                         buildRoundedImageCard("images/exploring.jpg", "Exploring"),
                         buildRoundedImageCard("images/itinarary.jpg", "Itinerary"),
                         buildRoundedImageCard("images/Dining.jpg", "Dining"),
+=======
+                        buildRoundedImageCard("images/itinarary.jpg", "Itinerary"),
+                        buildRoundedImageCard("images/Dining.jpg", "Dining"),
+                        buildRoundedImageCard("images/plane1.jpg", "Others more"),
+>>>>>>> 9020866 (Initial upload of Flutter project)
                       ],
                     ),
                   ),
@@ -287,6 +393,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 12),
+<<<<<<< HEAD
                 buildActivity("images/activity5.jpg", "Santorini - 30% OFF"),
                 buildActivity("images/activity2.jpg", "Tokyo Explorer Tour"),
                 buildActivity("images/activity3.jpg", "Morocco Adventure"),
@@ -302,6 +409,19 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 const SizedBox(height: 20),
                 buildActivity("images/activity1.jpg", "Camel Safari - Dubai"),
                 buildActivity("images/activity4.jpg", "Italian Cuisine Tour"),
+=======
+                buildActivity("images/activity5.jpg", "Santorini"),
+                buildActivity("images/activity2.jpg", "Explorer tour"),
+                buildActivity("images/activity3.jpg", "Adventures"),
+                const SizedBox(height: 30),
+                const Text(
+                  "Additional top activities",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22, fontFamily: 'Cairo'),
+                ),
+                const SizedBox(height: 20),
+                buildActivity("images/activity1.jpg", "Camel safari - Dubai"),
+                buildActivity("images/activity4.jpg", "Italian cuisine tour"),
+>>>>>>> 9020866 (Initial upload of Flutter project)
               ],
             ),
           ),
@@ -332,7 +452,11 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             Tab(icon: Icon(Icons.home_rounded)),
             Tab(icon: Icon(Icons.public)),
             Tab(icon: Icon(Icons.add)),
+<<<<<<< HEAD
             Tab(icon: Icon(Icons.info_outline)), // Changed from Icons.abc
+=======
+            Tab(icon: Icon(Icons.info_outline)),
+>>>>>>> 9020866 (Initial upload of Flutter project)
             Tab(icon: Icon(Icons.person_outlined)),
           ],
           onTap: (index) {
@@ -346,6 +470,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   }
 
   Widget buildRoundedImageCard(String imagePath, String text) {
+<<<<<<< HEAD
     return Padding(
       padding: const EdgeInsets.only(right: 12),
       child: ClipRRect(
@@ -373,11 +498,53 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
               ),
             ),
           ],
+=======
+    return GestureDetector(
+      onTap: () {
+        if (text == "Booking") {
+          _tabController.index = 2; // Go to countryActivities.dart
+        } else {
+          _tabController.index = 1; // Go to explore.dart
+        }
+      },
+      child: Padding(
+        padding: const EdgeInsets.only(right: 12),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: Stack(
+            alignment: Alignment.bottomCenter,
+            children: [
+              Image.asset(
+                imagePath,
+                width: 150,
+                height: 150,
+                fit: BoxFit.fill,
+              ),
+              Container(
+                width: 150,
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                color: Colors.black.withOpacity(0.6),
+                child: Text(
+                  text,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+>>>>>>> 9020866 (Initial upload of Flutter project)
         ),
       ),
     );
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9020866 (Initial upload of Flutter project)
   Widget buildActivity(String imagePath, String text) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
